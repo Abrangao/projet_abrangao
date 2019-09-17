@@ -21,6 +21,11 @@ Route::get('/about',  [
     'uses' => 'PagesController@about'
 ]);
 
+Route::get('/contact',  [
+    'as' => 'contact_path',
+    'uses' => 'ContactsController@create'
+]);
+
 Route::get('/utilisateurs', 'UtilisateursController@liste');
 Route::get('/inscription', 'InscriptionController@formulaire');
 Route::post('/inscription', 'InscriptionController@traitement');
