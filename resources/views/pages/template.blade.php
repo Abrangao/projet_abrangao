@@ -2,7 +2,7 @@
  <html lang="fr">
  <head>
        <meta charset="UTF-8">
-      <title>Laracarte</title>
+      <title>{{page_title($title ?? '')}} </title>
      <!-- google font  -->
      <link href="https://fonts.googleapis.com/css?family=Open+Sans*" rel="stylesheet">
      <!-- font Awesome -->

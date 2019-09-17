@@ -1,4 +1,4 @@
-@extends('pages.template')
+@extends('pages.template', ['title'=>'About'])
 
 @section('contenu')
     <div class="container">
@@ -9,7 +9,7 @@
             <p class="alert alert-warning"> <strong><i class="fa fa-exclamation-triangle" aria-hidden ="true" ></i> This app has been built by<a href="https://twitter.com/etsmo">@etsmo</a> for learning purpose.</strong></p>
         </div>
     </div>
-        <p>Feel free to help to improve the <a href="#">source code </a></p>
+        <p>Feel free to help to improve the <a href="https://github.com/Abrangao/projet_abrangao.git">source code </a></p>
 
         <hr>
 
