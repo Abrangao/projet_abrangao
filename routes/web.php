@@ -25,26 +25,20 @@ Route::get('/contact',  [
     'as' => 'contact_path',
     'uses' => 'ContactsController@create'
 ]);
+Route::post('/contact',  [
+    'as' => 'contact_path',
+    'uses' => 'ContactsController@store'
+]);
 
 Route::get('/utilisateurs', 'UtilisateursController@liste');
 Route::get('/inscription', 'InscriptionController@formulaire');
 Route::post('/inscription', 'InscriptionController@traitement');
-// Route::get('/inscription', function(){
-// 	return view('pages.inscription');
-// });
-// Route::post('/inscription', function(){
-// 		request()->validate([
-//             'email' => ['required', 'email'],
-//             'password' => ['required', 'confirmed', 'min:8'],
-//             'password_confirmation' => ['required'],
-//         ], [
-//             'password.min' => 'Pour des raisons de sécurité, votre mot de passe doit faire :min caractères.'
-//         ]);
 
-//         $utilisateur = User::create([
-//             'email' => request('email'),
-//             'mot_de_passe' => bcrypt(request('password')),
-//         ]);
 
-//         return "Nous avons reçu votre email qui est " . request('email') . ' et votre mot de passe est ' . request('password');
-// });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+ //Route::get('/home', 'HomeController@index')->name('home');

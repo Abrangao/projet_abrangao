@@ -3,6 +3,7 @@
  <head>
        <meta charset="UTF-8">
       <title>{{page_title($title ?? '')}} </title>
+
      <!-- google font  -->
      <link href="https://fonts.googleapis.com/css?family=Open+Sans*" rel="stylesheet">
      <!-- font Awesome -->
